@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.center {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+body {
+    font-family: "Montserrat";
+    background-color:  #000915;
+}
+
+a {
+    text-decoration: none;
+}
+
+.top {
+    padding-top: 217.1px;
+    height: 1024px;
+    background: url(./img/view_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: contain;
+    &__header {
+        color: #FFF;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 32px;
+    }
+    &__text {
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px; 
+
+        &-box {
+            max-width: 481px;
+            padding-bottom: 44px;
+        }
+
+        &-link {
+            color: #FFF;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+        }
+        
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 234.063px;
+        height: 48.603px;
+        border-radius: 30px;
+        background: #9C0332;
+        border-color: transparent;
+        color: #FFF;
+        font-family: "Montserrat";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        &:hover {
+            background: #EB443F;
+        }
+    }
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+
+    &__game-card {
+        box-sizing: border-box;
+        width: 379px;
+        height: 300px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding-left: 32px;
+        padding-bottom: 32px;
+        color: #FFF;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px;
+        border: 3px solid transparent;
+        border-radius: 16px;
+
+        &:hover {
+            border: 3px solid #44D2FF;
+        }
+
+        &-1 {
+            background-image: url(./img/Game1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &-2 {
+            background-image: url(./img/Game2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &-3 {
+            background-image: url(./img/Game3.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}
