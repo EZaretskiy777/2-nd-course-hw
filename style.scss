@@ -100,6 +100,8 @@ a {
         line-height: 32px;
         border: 3px solid transparent;
         border-radius: 16px;
+        background-repeat: no-repeat;
+        background-size: cover;
 
         &:hover {
             border: 3px solid #44D2FF;
@@ -107,20 +109,14 @@ a {
 
         &-1 {
             background-image: url(./img/Game1.png);
-            background-repeat: no-repeat;
-            background-size: cover;
         }
 
         &-2 {
             background-image: url(./img/Game2.png);
-            background-repeat: no-repeat;
-            background-size: cover;
         }
 
         &-3 {
-            background-image: url(./img/Game3.png);
-            background-repeat: no-repeat;
-            background-size: cover;
+            background-image: url(./img/Game3.png); 
         }
     }
 }

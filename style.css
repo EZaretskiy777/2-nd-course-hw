@@ -95,22 +95,18 @@ a {
   line-height: 32px;
   border: 3px solid transparent;
   border-radius: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .bottom__game-card:hover {
   border: 3px solid #44D2FF;
 }
 .bottom__game-card-1 {
   background-image: url(./img/Game1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .bottom__game-card-2 {
   background-image: url(./img/Game2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .bottom__game-card-3 {
   background-image: url(./img/Game3.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 }/*# sourceMappingURL=style.css.map */
