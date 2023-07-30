@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+body {
+  font-family: "Montserrat";
+  background-color: #000915;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top {
+  padding-top: 217.1px;
+  height: 1024px;
+  background: url(./img/view_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain;
+}
+.top__header {
+  color: #FFF;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 32px;
+}
+.top__text {
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+.top__text-box {
+  max-width: 481px;
+  padding-bottom: 44px;
+}
+.top__text-link {
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+.top__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 234.063px;
+  height: 48.603px;
+  border-radius: 30px;
+  background: #9C0332;
+  border-color: transparent;
+  color: #FFF;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.top__button:hover {
+  background: #EB443F;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+.bottom__game-card {
+  box-sizing: border-box;
+  width: 379px;
+  height: 300px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-left: 32px;
+  padding-bottom: 32px;
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  border: 3px solid transparent;
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bottom__game-card:hover {
+  border: 3px solid #44D2FF;
+}
+.bottom__game-card-1 {
+  background-image: url(./img/Game1.png);
+}
+.bottom__game-card-2 {
+  background-image: url(./img/Game2.png);
+}
+.bottom__game-card-3 {
+  background-image: url(./img/Game3.png);
+}/*# sourceMappingURL=style.css.map */
