@@ -22,7 +22,6 @@ a {
   height: 1024px;
   background: url(./img/view_background.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
   background-size: contain;
 }
 .top__header {
@@ -109,4 +108,44 @@ a {
 }
 .bottom__game-card-3 {
   background-image: url(./img/Game3.png);
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    background-size: 280%;
+    background-position-x: 31.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 32.95px;
+    align-items: center;
+    justify-content: center;
+    height: 735px;
+    padding-top: 0;
+  }
+  .top__header {
+    font-size: 32px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .top__text {
+    text-align: center;
+  }
+  .top__text-box {
+    width: 343px;
+    padding-bottom: 0;
+  }
+  .bottom {
+    flex-wrap: wrap;
+    justify-content: center;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+  .bottom__game-card {
+    width: 343px;
+    height: 300px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,42 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        background-size: 280%;
+        background-position-x: 31.5%;
+        display: flex;
+        flex-direction: column;
+        gap: 32.95px;
+        align-items: center;
+        justify-content: center;
+        height: 735px;
+        padding-top: 0;
+
+        &__header {
+            font-size: 32px;
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+        &__text {
+            text-align: center;
+            &-box {
+                width: 343px;
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    .bottom {
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 0;
+        &__game-card {
+            width: 343px;
+            height: 300px;
+        }
+    }
+}
