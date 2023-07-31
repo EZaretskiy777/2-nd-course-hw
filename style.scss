@@ -17,6 +17,25 @@ a {
     text-decoration: none;
 }
 
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background: #9C0332;
+    border-color: transparent;
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    &:hover {
+        background: #EB443F;
+    }
+}
+
 .top {
     padding-top: 217.1px;
     height: 1024px;
@@ -39,11 +58,9 @@ a {
         font-style: normal;
         font-weight: 300;
         line-height: 32px; 
-
-        &-box {
-            max-width: 481px;
-            padding-bottom: 44px;
-        }
+        display: block;
+        max-width: 481px;
+        padding-bottom: 44px;
 
         &-link {
             color: #FFF;
@@ -51,33 +68,16 @@ a {
             font-style: normal;
             font-weight: 700;
             line-height: 32px;
-        }
-        
+        } 
     }
 
     &__button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         width: 234.063px;
         height: 48.603px;
-        border-radius: 30px;
-        background: #9C0332;
-        border-color: transparent;
-        color: #FFF;
-        font-family: "Montserrat";
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-
-        &:hover {
-            background: #EB443F;
-        }
     }
 }
 
-.bottom {
+.games {
     display: flex;
     justify-content: space-between;
     gap: 32px;
@@ -119,6 +119,49 @@ a {
         &-3 {
             background-image: url(./img/Game3.png); 
         }
+    }
+}
+
+.seasons {
+    display: flex;
+    gap: 135px;
+    padding-bottom: 233.5px;
+    padding-top: 233.5px;
+    justify-content: space-between;
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__header {
+        color: #FFF;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &__text {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px; /* 177.778% */
+        display: block;
+        width: 584px;
+    }
+
+    &__button {
+        width: 234.063px;
+        height: 48.603px;
+    }
+
+    &__svg {
+        width: 485px;
+        height: 333px;
     }
 }
 

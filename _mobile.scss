@@ -30,13 +30,40 @@
         }
     }
 
-    .bottom {
+    .games {
         flex-wrap: wrap;
         justify-content: center;
         column-gap: 0;
         &__game-card {
             width: 343px;
             height: 300px;
+        }
+    }
+
+    .seasons {
+        flex-wrap: wrap;
+        gap: 64px;
+        justify-content: center;
+        padding-bottom: 85.01px;
+        padding-top: 51px;
+        
+        &__form{
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__header {
+            text-align: center;
+        }
+
+        &__text {
+            width: 343px;
+            text-align: center;
+        }
+
+        &__svg {
+            width: 310px;
+            height: 236px;
         }
     }
 }
