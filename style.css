@@ -17,6 +17,24 @@ a {
   text-decoration: none;
 }
 
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background: #9C0332;
+  border-color: transparent;
+  color: #FFF;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.button:hover {
+  background: #EB443F;
+}
+
 .top {
   padding-top: 217.1px;
   height: 1024px;
@@ -38,8 +56,7 @@ a {
   font-style: normal;
   font-weight: 300;
   line-height: 32px;
-}
-.top__text-box {
+  display: block;
   max-width: 481px;
   padding-bottom: 44px;
 }
@@ -51,33 +68,18 @@ a {
   line-height: 32px;
 }
 .top__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 234.063px;
   height: 48.603px;
-  border-radius: 30px;
-  background: #9C0332;
-  border-color: transparent;
-  color: #FFF;
-  font-family: "Montserrat";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.top__button:hover {
-  background: #EB443F;
 }
 
-.bottom {
+.games {
   display: flex;
   justify-content: space-between;
   gap: 32px;
   padding-top: 128px;
   padding-bottom: 128px;
 }
-.bottom__game-card {
+.games__game-card {
   box-sizing: border-box;
   width: 379px;
   height: 300px;
@@ -97,17 +99,55 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.bottom__game-card:hover {
+.games__game-card:hover {
   border: 3px solid #44D2FF;
 }
-.bottom__game-card-1 {
+.games__game-card-1 {
   background-image: url(./img/Game1.png);
 }
-.bottom__game-card-2 {
+.games__game-card-2 {
   background-image: url(./img/Game2.png);
 }
-.bottom__game-card-3 {
+.games__game-card-3 {
   background-image: url(./img/Game3.png);
+}
+
+.seasons {
+  display: flex;
+  gap: 135px;
+  padding-bottom: 233.5px;
+  padding-top: 233.5px;
+  justify-content: space-between;
+}
+.seasons__form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.seasons__header {
+  color: #FFF;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.seasons__text {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px; /* 177.778% */
+  display: block;
+  width: 584px;
+}
+.seasons__button {
+  width: 234.063px;
+  height: 48.603px;
+}
+.seasons__svg {
+  width: 485px;
+  height: 333px;
 }
 
 @media (max-width: 767px) {
@@ -138,14 +178,36 @@ a {
     width: 343px;
     padding-bottom: 0;
   }
-  .bottom {
+  .games {
     flex-wrap: wrap;
     justify-content: center;
     -moz-column-gap: 0;
          column-gap: 0;
   }
-  .bottom__game-card {
+  .games__game-card {
     width: 343px;
     height: 300px;
+  }
+  .seasons {
+    flex-wrap: wrap;
+    gap: 64px;
+    justify-content: center;
+    padding-bottom: 85.01px;
+    padding-top: 51px;
+  }
+  .seasons__form {
+    justify-content: center;
+    align-items: center;
+  }
+  .seasons__header {
+    text-align: center;
+  }
+  .seasons__text {
+    width: 343px;
+    text-align: center;
+  }
+  .seasons__svg {
+    width: 310px;
+    height: 236px;
   }
 }/*# sourceMappingURL=style.css.map */
