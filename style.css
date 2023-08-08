@@ -150,6 +150,44 @@ a {
   height: 333px;
 }
 
+.word-game {
+  display: flex;
+  gap: 135px;
+  padding-bottom: 239px;
+  padding-top: 239px;
+  justify-content: space-between;
+}
+.word-game__form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.word-game__header {
+  color: #FFF;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.word-game__text {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px; /* 177.778% */
+  display: block;
+  width: 584px;
+}
+.word-game__button {
+  width: 234.063px;
+  height: 48.603px;
+}
+.word-game__svg {
+  width: 485px;
+  height: 333px;
+}
+
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
@@ -207,6 +245,30 @@ a {
     text-align: center;
   }
   .seasons__svg {
+    width: 310px;
+    height: 236px;
+  }
+  .word-game {
+    flex-direction: column-reverse;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 64px;
+    justify-content: center;
+    padding-bottom: 90.01px;
+    padding-top: 50px;
+  }
+  .word-game__form {
+    justify-content: center;
+    align-items: center;
+  }
+  .word-game__header {
+    text-align: center;
+  }
+  .word-game__text {
+    width: 343px;
+    text-align: center;
+  }
+  .word-game__svg {
     width: 310px;
     height: 236px;
   }
