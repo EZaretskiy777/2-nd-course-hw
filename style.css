@@ -188,6 +188,55 @@ a {
   height: 333px;
 }
 
+.riddle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding-bottom: 288.2px;
+  padding-top: 276.2px;
+  background-image: url(./img/riddle_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.riddle__header {
+  color: #FFF;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.riddle__text {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px; /* 177.778% */
+  display: block;
+  width: 1200px;
+  text-align: center;
+}
+.riddle__button {
+  width: 234.063px;
+  height: 48.603px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 32.5px;
+  padding-top: 32.5px;
+  border-top: 1px solid rgba(184, 212, 255, 0.2);
+}
+.footer__text {
+  color: #FFF;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
@@ -271,5 +320,22 @@ a {
   .word-game__svg {
     width: 310px;
     height: 236px;
+  }
+  .riddle {
+    padding-bottom: 487px;
+    padding-top: 51.4px;
+    background-size: 50%/contain;
+  }
+  back .riddle__header {
+    font-size: 32px;
+  }
+  .riddle__text {
+    font-size: 14px;
+    line-height: 22px;
+    width: 343px;
+  }
+  .riddle__button {
+    width: 234.063px;
+    height: 48.603px;
   }
 }/*# sourceMappingURL=style.css.map */

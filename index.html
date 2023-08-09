@@ -12,13 +12,13 @@
 </head>
 
 <body>
-    <section class="top center">
+    <header class="top center">
         <h1 class="top__header">Добро пожаловать <br>на мой сайт !</h1>
         <p class="top__text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <a
                 class="top__text-link" href="#">поехали</a> и <a class="top__text-link" href="#">приступай</a>
         </p>
         <button class="top__button button" type="submit">Поехали!</button>
-    </section>
+    </header>
     <section class="games center">
         <div class="games__game-card games__game-card-1">
             Игра 1
@@ -35,7 +35,7 @@
             <h1 class="seasons__header">Времена года!</h1>
             <p class="seasons__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому
                 времени года он относится</p>
-            <button class="seasons__button button">Играть!</button>
+            <button class="seasons__button button" onclick="seasonsGame()">Играть!</button>
         </form>
         <svg class="seasons__svg" viewBox="0 0 485 334" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_700_26)">
@@ -546,7 +546,16 @@
             <button class="word-game__button button">Играть!</button>
         </form>
     </section>
-    <script src="./hw-4.js"></script>
+    <section class="riddle">
+        <h1 class="riddle__header">Игра в загадки</h1>
+        <p class="riddle__text">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный
+            ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.</p>
+        <button class="seasons__button button">Играть!</button>
+    </section>
+    <footer class="footer">
+        <p class="footer__text">Все права защищены</p>
+    </footer>
+    <script src="./hw-5.js"></script>
 </body>
 
 </html>
