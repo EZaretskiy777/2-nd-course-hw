@@ -95,4 +95,26 @@
             height: 236px;
         }
     }
+
+    .riddle {
+        padding-bottom: 487px;
+        padding-top: 51.4px;
+        background-size: 50% / contain;
+        back
+
+        &__header {
+            font-size: 32px;
+        }
+    
+        &__text {
+            font-size: 14px;
+            line-height: 22px; 
+            width: 343px;
+        }
+    
+        &__button {
+            width: 234.063px;
+            height: 48.603px;
+        }
+    }
 }
