@@ -17,10 +17,10 @@ console.log(squareNum(7));
 const yearsQuestion = () => {
     let userYears = Number(prompt('Сколько вам лет?'));
 
-    if (userYears >= 0 && userYears <= 12) {
+    if (userYears >= 0 && userYears <= 12 && userYears) {
         alert('Привет, друг!');
     }
-    else if (userYears > 12) {
+    else if (userYears > 12 && userYears) {
         alert('Добро пожаловать!');
     }
     else {
@@ -44,18 +44,18 @@ alert(isNumber('a', 8));
 const cubeNum = () => {
     let num = Number(prompt('Введите число'));
 
-    return isNaN(num) ? 'Переданный параметр не является числом' : `n в кубе равняется ${num ** 3}`;
+    return isNaN(num) || !num ? 'Переданный параметр не является числом' : `n в кубе равняется ${num ** 3}`;
 }
 
 alert(cubeNum());
 
 //Задание 7 
 function getArea() {
-    return 3.14 * this.radius;
+    return Math.PI * this.radius;
 }
 
 function getPerimeter() {
-    return 2 * 3.14 * this.radius;
+    return 2 * Math.PI * this.radius;
 }
 
 let circle1 = {
