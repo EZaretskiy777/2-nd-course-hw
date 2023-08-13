@@ -2,11 +2,10 @@
 let numbers = [1, 5, 4, 10, 0, 3];
 
 for (let num of numbers) {
+    alert(num);
     if (num === 10) {
-        alert(num);
         break;
     }
-    alert(num);
 }
 
 //Задание 2
