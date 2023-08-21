@@ -17,7 +17,7 @@ function isPositive(number) {
 }
 
 function isMale(gender) {
-    if (gender === 'male')
+    if (gender.gender === 'male')
         return true;
     else
         return false;
@@ -27,12 +27,7 @@ function filter(arr, ruleFunc) {
     let funcArr = [];
 
     for (let x = 0; x < arr.length; x++) {
-        if (typeof arr[x] === 'object') {
-            if (ruleFunc(arr[x].gender)) {
-                funcArr.push(arr[x]);
-            }
-        }
-        else if (ruleFunc(arr[x])) {
+        if (ruleFunc(arr[x])) {
             funcArr.push(arr[x]);
         }
     }
@@ -91,5 +86,4 @@ function sayHi(name) {
     console.log(`Привет, ${name}!`);
 }
 
-delayForSecond();
-setTimeout(() => sayHi('Глеб'), 2000);
+delayForSecond(() => sayHi('Глеб'));
